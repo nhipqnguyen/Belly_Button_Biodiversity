@@ -21,3 +21,7 @@ d3.json("samples.json").then(function(data){
     Object.entries(firstPerson).forEach(([key, value]) =>
       {console.log(key + ': ' + value);});
 });
+
+
+// Open Git Bash, navigate to folder, type "python -m http.server" 
+// open http://127.0.0.1:8000/ on browser
