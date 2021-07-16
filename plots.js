@@ -42,13 +42,19 @@ function buildMetadata(sample) {
         // assign the 1st item in the array to the variable result
         var result = resultArray[0];
         // create a string variable to hold the volunteer's demogrpahic info
-        var demogrpahicInfo = `ID: ${result.id}
-        ETHNICITY: ${result.ethnicity}
-        GENDER: ${result.gender}
-        AGE: ${result.age}
-        LOCATION: ${result.location}
-        BBTYPE: ${result.bbtype}
-        WFREQ: ${result.wfreq}` 
+        var demogrpahicInfo = `ID: ${result.id}`
+                            + newLine
+                            + `ETHNICITY: ${result.ethnicity}`
+                            + newLine
+                            + `GENDER: ${result.gender}`
+                            + newLine
+                            + `AGE: ${result.age}`
+                            + newLine
+                            + `LOCATION: ${result.location}`
+                            + newLine
+                            +`BBTYPE: ${result.bbtype}`
+                            + newLine
+                            + `WFREQ: ${result.wfreq}`; 
         // select the div of the Demographic Info panel (whose id is sample-metadata)
         // and assign it to the variable PANEL
         var PANEL = d3.select("#sample-metadata");
