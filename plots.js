@@ -42,28 +42,17 @@ function buildMetadata(sample) {
         // assign the 1st item in the array to the variable result
         var result = resultArray[0];
         // create a string variable to hold the volunteer's demogrpahic info
-        /*var demogrpahicInfo = `ID: ${result.id}`
-                            + newLine
-                            + `ETHNICITY: ${result.ethnicity}`
-                            + newLine
-                            + `GENDER: ${result.gender}`
-                            + newLine
-                            + `AGE: ${result.age}`
-                            + newLine
-                            + `LOCATION: ${result.location}`
-                            + newLine
-                            +`BBTYPE: ${result.bbtype}`
-                            + newLine
-                            + `WFREQ: ${result.wfreq}`; */
+        var demogrpahicKeys = ["ID", "ETHNICITY", "GENDER","AGE", "LOCATION", "BBTYPE", "WFREQ"]
         // select the div of the Demographic Info panel (whose id is sample-metadata)
         // and assign it to the variable PANEL
         var PANEL = d3.select("#sample-metadata");
         // ensure that the contents of the panel are cleared 
         // when another ID number is chosen from the dropdown menu
         PANEL.html("");
-        Object.entries(result).forEach((info) => {
+        var demographicValues = Object.values(result);
+        demographicValues.forEach((info) => {
             PANEL.append("h6").text(
-                `${info[0]}: ${info[1]}`);
+                `${demogrpahicKeys[demographicValues.indexOf(info)]}: ${info}`);
             console.log(info);
         });
         // append a h6 heading to the panel 
