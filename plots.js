@@ -61,7 +61,7 @@ function buildMetadata(sample) {
         // ensure that the contents of the panel are cleared 
         // when another ID number is chosen from the dropdown menu
         PANEL.html("");
-        result.forEach(info => PANEL.append("h6").text(info);
+        result.forEach(info => PANEL.append("h6").append("br").text(info);
         // append a h6 heading to the panel 
         // and print the demographic info to the panel, respectively
         //PANEL.append("h6").text(demogrpahicInfo);
