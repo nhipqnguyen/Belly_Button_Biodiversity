@@ -64,6 +64,7 @@ function buildMetadata(sample) {
         Object.entries(result).forEach((info) => {
             PANEL.append("h6").text(
                 `${info[0]}: ${info[1]}`);
+            console.log(info);
         });
         // append a h6 heading to the panel 
         // and print the demographic info to the panel, respectively
