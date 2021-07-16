@@ -62,7 +62,8 @@ function buildMetadata(sample) {
         // when another ID number is chosen from the dropdown menu
         PANEL.html("");
         Object.entries(result).forEach((key,value) => {
-            PANEL.append("h6").appendChild("br").text(`${key}: ${value}`);
+            PANEL.append("h6").text(
+                `${key}: ${value} <br>`);
         });
         // append a h6 heading to the panel 
         // and print the demographic info to the panel, respectively
