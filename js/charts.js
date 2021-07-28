@@ -80,7 +80,7 @@ function buildCharts(sample) {
       y: yticks,
       text: otu_labels.slice(0,10).reverse,
       type: "bar",
-      orientation: h
+      orientation: "h"
     };
     var barData = [trace];
     // 9. Create the layout for the bar chart. 
