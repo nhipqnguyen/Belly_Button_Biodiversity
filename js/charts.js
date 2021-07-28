@@ -78,7 +78,7 @@ function buildCharts(sample) {
     var trace = {
       x: sample_values.slice(0,10).reverse(),
       y: yticks,
-      text: otu_labels.slice(0,10).reverse,
+      text: otu_labels.slice(0,10).reverse(),
       type: "bar",
       orientation: "h"
     };
