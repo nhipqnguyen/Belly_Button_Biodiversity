@@ -81,7 +81,8 @@ function buildCharts(sample) {
       y: yticks,
       text: otu_labels.slice(0,10).reverse(),
       type: "bar",
-      orientation: "h"
+      orientation: "h",
+      marker: {color: "lightblue"}
     };
     var barData = [trace];
     // 9. Create the layout for the bar chart. 
@@ -135,13 +136,13 @@ function buildCharts(sample) {
       mode: "gauge+number",
       gauge: {
         axis: {range: [null, 10]},
-        bar: {color: "sandybrown"},
+        bar: {color: "teal"},
         steps: [
-          {range: [0, 2], color: "lightblue"},
-          {range: [2, 4], color: "skyblue"},
-          {range: [4, 6], color: "lightskyblue"},
-          {range: [6, 8], color: "blue"},
-          {range: [8, 10], color: "steelblue"}
+          {range: [0, 2], color: "lightblue", opacity: 0.75},
+          {range: [2, 4], color: "pink", opacity: 0.75},
+          {range: [4, 6], color: "lightgreen", opacity: 0.75},
+          {range: [6, 8], color: "peachpuff", opacity: 0.75},
+          {range: [8, 10], color: "plum", opacity: 0.75}
         ]        
       }
     }];
