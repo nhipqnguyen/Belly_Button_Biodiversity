@@ -8,4 +8,4 @@ Our assignment is to use Plotly.js to build a dashboard with interactive charts 
 ## Results
 Below is a screenshot of the dashboard after getting deployed to Git Pages.
 
-![Belly Button Biodiversity Dashboard](https://github.com/nhipqnguyen/Belly_Button_Biodiveristy/blob/main/images/dashbpard.png)
+![Belly Button Biodiversity Dashboard](https://github.com/nhipqnguyen/Belly_Button_Biodiversity/blob/main/images/dashboard.png)
