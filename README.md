@@ -1,6 +1,10 @@
 # Belly_Button_Biodiversity
 # Project Overview
-Our assignment is to use Plotly.js to build a dashboard with interactive charts with a belly button diversity dataset. Upon selection of an ID number in a pull down list, the ID metadata panel, a horizontal bar chart, a bubble chart, and a gauge chart will be displayed.
+In this project, I used Plotly.js to build a dashboard with interactive charts with a belly button diversity dataset. Upon selection of an ID number in a pull down list, a dashboard with the following visualizations will be displayed:
+- A demographic information panel with the selected volunteer's information
+- A horizontal bar chart displaying the top 10 bacterial species (OTUs) found in the selected volunteer's belly button
+- A bubble chart illustrating bacteria cultures per sample of the selected volunteer
+- A gauge chart displaying the selected volunteer's weekly washing frequency's value as a measure from 0-10 on the progress bar.
 
 ## Resources
 Data Sources: samples.json.
