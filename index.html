@@ -14,32 +14,32 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>MSDS 610 Dashboard</h1>
-        <p> This dashboard builds interactive charts with a random survey dataset. Upon selection of an id number in a pull down list, the id metadata will be displayed on the panel on the left, followed by graphs with more information about the survey participant.</p>
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p> This dashboard builds interactive charts with a belly button diversity dataset. Upon selection of an id number in a pull down list, the id metadata will be displayed on the panel on the left, followed by graphs with more information about the bacteria species identified in the sample.</p>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-2">
         <div class="well">
-          <h5>ID No.:</h5>
+          <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title">General Info</h3>
+            <h3 class="panel-title">Demographic Info</h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
-        <p>The above bar chart displays the top 5 favorite dishes.</p>
+        <p>The above bar chart displays the top 10 bacterial species (OTUs) identified in the volunteers's belly button.</p>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
-        <p>The above gauge chart displays the number of times the survey participant exercises per week.</p>
+        <p>The above gauge chart displays the number of times the volunteer washes their belly button per week as a measure from 0-10 on the progress bar.</p>
       </div>
     </div>
     <div class="row">
